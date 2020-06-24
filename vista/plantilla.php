@@ -25,7 +25,10 @@
 </head>
 <body>
     <div class="container-fluid border border-bottom border-2px" style="background-color: #fcaea9">
-        <h3 class="text-center py-3 text-white">Reservaciones</h3>
+        <div class="text-center bg-red">
+            <h3 style="display: inline-block; vertical-align: -webkit-baseline-middle" class="text-center py-3 text-white">Reservaciones</h3>
+            <img src="img/logo.png" style="width: 200px; display: inline-block bg-none">
+        </div>
         <?php
             include "vista/modulos/navBar.php";
         ?>

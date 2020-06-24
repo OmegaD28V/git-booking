@@ -53,9 +53,8 @@
                 <td><?='Para '.$capacidad["capacidad"].' personas'?></td>
                 <td><?=$value["registro"]?></td>      
                 <td><?=$value["fecha_hora"]?></td>      
-                <td><?=$estado?></td>      
+                <td><div class="alert alert-info"><span><?=$estado?></span></div></td>      
                 <td>
-                    <a href="index.php?page=Book&book=<?=$value["idbook"]?>" class="btn btn-primary">Detalles</a>
                     <?php
                         if ($value["status"] == 1  ) {
                             ?>
@@ -70,6 +69,10 @@
                             ?>
                         </form>
                     </div>
+                            <?php
+                        }else {
+                            ?>
+                    <div class="alert alert-warning"><span>Nada por hacer</span></div>
                             <?php
                         }
                     ?>
